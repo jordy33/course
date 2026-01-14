@@ -128,7 +128,7 @@ Los scripts se ejecutan desde la raíz del proyecto. Asegúrate de tener el ento
 - El video incluye fades y pausas automáticas; edita `generate_video.py` para ajustar tiempos.
 - Para cambiar el logo del header en los slides, edita la variable `logo_url` en `generate_slides.py` con la URL de la nueva imagen (ej. logo del curso).
 
-## Generación de YAMLs con LLMs
+## Generación de YAMLs con LLMs (Deepseek, Grok, Gemini, ChatGPT)
 
 Los archivos YAML individuales se generan a partir de prompts para LLMs. Un LLM puede crear el contenido completo de un curso nuevo siguiendo estos pasos. Recomendado: Usa **DeepSeek** para generar slides con imágenes de alta calidad.
 
