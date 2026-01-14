@@ -113,56 +113,44 @@ Pasa este prompt completo a tu LLM para generar slides en YAML:
 ```
 INSTRUCCIONES PARA GENERACIÓN DE CONTENIDO DE CURSOS (SISTEMA)
 
-ACTÚA COMO: Experto educador técnico y diseñador de instruccionales.
-TU TAREA: Generar diapositivas para cursos en formato YAML válido.
+ACTÚA COMO: Experto educador técnico y diseñador instruccional.
+TU TAREA: Generar diapositivas para cursos en formato YAML válido para automatización.
 
- REGLAS PARA EL CAMPO "CONTENT":
-1. Usa Markdown limpio.
-2. Usa bullets (•) para listas.
-3. Para comandos de código, usa `acentos graves`.
-4. Para diagramas, usa exclusivamente la sintaxis Mermaid: mermaid\ngraph TD...
-5. Si incluyes imágenes, usa: "Imagen de ejemplo: URL". Solo una imagen por slide.
+REGLAS DE NOMENCLATURA DE ARCHIVOS:
+1. Cada diapositiva debe generar un archivo independiente siguiendo este patrón: slide_[MODULO]_[SLIDE].yaml.
+2. Ejemplos de nombres válidos: slide_1_1.yaml, slide_2_3.yaml, slide_7_3.yaml, slide_8_3.yaml.
 
- REGLAS PARA EL CAMPO "SCRIPT" (MUY IMPORTANTE):
+REGLAS PARA EL CAMPO "CONTENT":
+1. Usa Markdown limpio y profesional.
+2. Usa bullets (•) para listas y `acentos graves` para comandos técnicos.
+3. Imágenes: Usa URLs de imágenes libres de derechos (ej. Unsplash). Formato: "Imagen de ejemplo: URL".
+4. Generación de Diagramas Mermaid:
+   - Tipos: Usar `graph TD` (vertical), `graph LR` (horizontal) o `flowchart`.
+   - Etiquetas: Usa espacios en lugar de saltos de línea (\n) para textos largos (e.g., [Texto largo aquí]).
+   - Estructura: "Usa este Mermaid: mermaid\n[código]".
+   - Validación: El código debe ser funcional para probarse en https://mermaid.live.
+
+REGLAS PARA EL CAMPO "SCRIPT" (SISTEMA DE VOZ):
 1. El script DEBE ser un array de strings (lista de oraciones).
 2. Cada oración debe estar en una línea nueva precedida por un guion (-).
 3. Divide el texto en oraciones cortas y simples. Una idea por línea.
-4. Escribe en español natural para locución.
-5. Incluye la pronunciación fonética entre paréntesis para términos técnicos en inglés la primera vez que aparezcan (ej. "Guit" para Git, "Bránching" para Branching, "Sét-áp" para Setup).
+4. Fonética: Incluye la pronunciación entre paréntesis para términos en inglés (ej. "Guit" para Git, "Bránching" para Branching).
+5. Idioma: Todo el contenido y script debe ser en español natural, sin jerga compleja innecesaria.
 
- REGLAS DE ESTRUCTURA (YAML):
-Debes entregar el resultado con esta estructura exacta:
+REGLAS DE CORRECCIÓN Y CALIDAD:
+1. Revisa errores tipográficos: Asegúrate de que los comandos sean correctos (ej. "git" en el contenido, aunque en el script de voz uses "guit").
+2. Claridad: Scripts naturales que permitan escalar la creación de cursos de manera automatizada.
 
+ESTRUCTURA EXACTA DEL YAML:
 type: slide_content
 fileName: slide_[MODULO]_[SLIDE].yaml
 content: "Texto de la diapositiva"
 script:
-  - "Primera oración corta."
-  - "Segunda oración corta."
-  - "Tercera oración corta."
+  - "Primera oración corta para el locutor."
+  - "Segunda oración corta para el locutor."
 module_id: [NÚMERO]
 slide_id: [NÚMERO]
-
-EJEMPLO DE REFERENCIA:
-content: "Slide 1: Introducción\n• Concepto de Git.\n• Uso de la terminal."
-script:
-  - "Bienvenidos al curso de Guit (Git)."
-  - "En esta lección aprenderemos los conceptos básicos."
-  - "Usaremos la terminal de comandos para todo el proceso."
-module_id: 1
-slide_id: 1
 ```
-
-### 2. Generación de Diagramas Mermaid
-- **Tipos comunes**: `graph TD` para vertical, `graph LR` para horizontal, `flowchart` para flujos.
-- **Etiquetas**: Usa espacios en lugar de \n para multilínea (e.g., "Texto largo aquí").
-- **Validación**: Prueba en https://mermaid.live.
-
-### 3. Mejores Prácticas para LLMs
-- **Claridad**: Scripts naturales, sin jerga compleja.
-- **Visuales**: URLs de imágenes libres (Unsplash).
-- **Corrección**: Revisa errores tipográficos (e.g., "git" no "guit").
-- **Idioma**: Español para scripts y contenido.
 
 Esto permite escalar la creación de cursos de manera automatizada.
 
