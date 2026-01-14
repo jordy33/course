@@ -134,7 +134,7 @@ Los archivos YAML individuales se generan a partir de prompts para LLMs. Un LLM 
 
 ### Instrucciones para el Generador de Cursos (System Prompt)
 
-Pasa este prompt completo a tu LLM para generar slides en YAML:
+Pasa este prompt completo a tu LLM (Deepseek, Grok, Gemini, ChatGPT) para generar slides en YAML:
 
 ```
 INSTRUCCIONES PARA GENERACIÓN DE CONTENIDO DE CURSOS (SISTEMA - OPTIMIZADO PARA KOKORO TTS)
