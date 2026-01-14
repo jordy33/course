@@ -24,7 +24,6 @@ Cada archivo YAML (e.g., `slide_1_1.yaml`) debe contener las siguientes claves o
 - Cada string debe ser natural para voz, clara y educativa.
 - Para términos técnicos en inglés, escribe su pronunciación fonética en español para que suene natural (ej. "guit" en lugar de "git", "ribéis" en lugar de "rebase").
 - Una idea por línea para facilitar la sincronización de audio y video.
-- Ejemplo: ["¡Bienvenidos!", "Guit es un sistema de control de versiones."]
 
 ### Reglas y Convenciones
 - **Idioma**: Scripts en español por defecto. Contenido en español o inglés según necesidad.
