@@ -36,7 +36,7 @@ Cada archivo YAML (e.g., `slide_1_1.yaml`) debe contener las siguientes claves o
 type: slide_content
 fileName: slide_1_1.yaml
 content: 
-  Módulo 1: Creación y Gestión Básica
+  Módulo 1: Creación y Gestión Básica de comandos en Mac OS
 
   • mkdir: Crear nuevas carpetas
   • touch: Crear archivos vacíos
