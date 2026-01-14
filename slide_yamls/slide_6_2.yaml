@@ -1,0 +1,14 @@
+content: "Slide 2: 'git clone' y 'git remote add'. Usa este Mermaid: mermaid\nflowchart TD\n  A[\"git clone <url>\"] --> B[\"Descarga repo remoto a local\"]\n  C[\"git remote add origin <url>\"] --> D[\"Agrega remoto 'origin' al repo local\"]\n  E[\"Ejemplo:\"] --> F[\"git clone https://github.com/user/repo.git\"]\n  E --> G[\"git remote add origin https://github.com/user/repo.git\"]"
+module_id: 6
+slide_id: 2
+script:
+  - "En esta diapositiva, vamos a explicar guit clon y guit rimot ad."
+  - "Guit clon descarga un repositorio remoto completo a tu máquina local."
+  - "Usas guit clon seguido de la URL del repositorio."
+  - "Por ejemplo, guit clon https guitjob punto com diagonal user diagonal repo punto git."
+  - "Esto crea una copia local con todo el historial y ramas."
+  - "Si ya tienes un repo local, puedes agregar un remoto con guit rimot ad oriyin seguido de la URL."
+  - "Oriyin es el nombre común para el remoto principal."
+  - "Mirando el diagrama, vemos que clon descarga el repo, y rimot ad lo conecta."
+  - "Estos comandos son esenciales para empezar a trabajar con repositorios remotos."
+  - "Te permiten colaborar con otros y mantener tu código respaldado."

@@ -1,0 +1,17 @@
+content: "Slide 1: Flujo de merge. Usa este Mermaid: mermaid\ngitGraph\n  commit\n\
+  \  branch feature\n  checkout feature\n  commit\n  commit\n  checkout main\n  merge\
+  \ feature"
+module_id: 5
+slide_id: 1
+script:
+  - "Aqui, vamos a explicar el flujo de merch en guit."
+  - "El merch permite integrar cambios de una rama a otra de manera segura."
+  - "Mirando el diagrama, vemos que comienza con un commit en la rama mein."
+  - "Luego se crea una rama llamada ficha y se cambia a ella."
+  - "En la rama ficha, se hacen dos commits adicionales."
+  - "Después, se vuelve a la rama mein."
+  - "Finalmente, se ejecuta merch ficha para integrar los cambios de ficha a mein."
+  - "Durante el merch, guit combina los historiales de ambas ramas."
+  - "Si no hay conflictos, el merch se completa automáticamente."
+  - "Si hay conflictos, tendrás que resolverlos manualmente antes de confirmar."
+  - "El merch es fundamental para combinar trabajo de diferentes ramas."

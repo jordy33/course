@@ -1,0 +1,19 @@
+content: "Slide 3: Resolver conflictos. Usa este Mermaid: mermaid\ngraph TD\n  A[Conflicto]\
+  \ --> B[Editar marcadores]\n  B --> C[git add]\n  C --> D[git commit]"
+module_id: 5
+slide_id: 3
+script:
+  - "En este diagrama , vamos a aprender cómo resolver conflictos en guit."
+  - "Los conflictos ocurren cuando guit no puede dar merch automáticamente porque hay cambios incompatibles."
+  - "Cuando hay un conflicto, guit marca las secciones problemáticas en los archivos."
+  - "Estos marcadores muestran las versiones de ambas ramas."
+  - "El primer paso es editar los marcadores para decidir qué versión mantener."
+  - "Puedes elegir la versión de una rama, la otra, o combinar ambas."
+  - "Una vez resuelto, agregas el archivo con guit add."
+  - "Luego, confirmas los cambios con guit commit para completar el merch."
+  - "Mirando el diagrama, el flujo es: "
+  - "Verificación de conflicto"
+  - "Editar marcadores"
+  - "Agregar archivos con guit add"
+  - "y luego confirmar cambios con guit commit"
+  - "Resolver conflictos requiere atención, pero es parte del trabajo colaborativo."

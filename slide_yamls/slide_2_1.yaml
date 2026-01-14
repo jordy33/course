@@ -1,0 +1,11 @@
+content: "Slide 1: Flujo básico: init → add → commit. Usa este Mermaid: mermaid\n\
+  graph LR\n  A[git init] --> B[git add]\n  B --> C[git commit]"
+script:
+  - "Ahora que tenemos Guit instalado, veamos los comandos básicos para empezar a trabajar con un repositorio."
+  - "El flujo básico de trabajo en Guit consta de tres pasos principales: init, add y commit."
+  - "Primero, guit init inicializa un nuevo repositorio Guit en tu proyecto, creando la carpeta oculta punto guit."
+  - "Luego, guit add añade los archivos que quieres incluir en el próximo commit al área de staguing."
+  - "Finalmente, guit commit guarda esos cambios en el historial del repositorio con un mensaje descriptivo."
+  - "Este flujo te permite controlar qué cambios se guardan y cuándo."
+module_id: 2
+slide_id: 1

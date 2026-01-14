@@ -1,0 +1,41 @@
+content: 'Slide 1: Bienvenidos al Curso Básico de Git
+
+
+  Temario:
+
+  • Introducción a Git
+
+  • Comandos Básicos
+
+  • Ver Historial
+
+  • Ramas (Branching)
+
+  • Mezclas (Merging)
+
+  • Repositorios Remotos
+
+  • Pull Requests
+
+  • Tags y Releases
+
+  • Tips Avanzados
+
+  • Conclusión
+
+
+   Imagen de ejemplo: https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png'
+script:
+  - "¡Bienvenidos a este curso básico de Guit de Mad Sistems!"
+  - "Aquí está el temario que cubriremos en este curso."
+  - "Comenzaremos con la Introducción a Guit."
+  - "Luego, aprenderemos los Comandos Básicos."
+  - "Veremos cómo inspeccionar el Historial."
+  - "Exploraremos las Ramas y el Branching."
+  - "Aprenderemos sobre Mezclas y Merying."
+  - "Trabajaremos con Repositorios Remotos."
+  - "Entenderemos los pul Ricuests."
+  - "Veremos Tags y Rilises."
+  - "Finalmente, Tips Avanzados y Conclusión."
+module_id: 1
+slide_id: 1

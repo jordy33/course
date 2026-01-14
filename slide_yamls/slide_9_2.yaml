@@ -1,0 +1,15 @@
+content: "Slide 2: Reset y revert. Usa este Mermaid: mermaid\ngraph TD\n  Reset[Reset:\
+  \ Mueve HEAD] --> Irreversible\n  Revert[Revert: Nuevo commit] --> Reversible"
+module_id: 9
+slide_id: 2
+script:
+  - "En esta diapositiva, vamos a explicar reset y ríbert en guit."
+  - "Ambos comandos deshacen cambios, pero de maneras diferentes."
+  - "Guit reset mueve el jed a un commit anterior, borrando commits posteriores."
+  - "Es irreversible si no tienes los commits guardados."
+  - "Guit ríbert crea un nuevo commit que deshace los cambios de un commit específico."
+  - "Es reversible porque añade historia en lugar de borrarla."
+  - "Usa reset para cambios locales no compartidos."
+  - "Usa ríbert para cambios ya empujados al remoto."
+  - "Mirando el diagrama, vemos que riset es irreversible, ríbert es reversible."
+  - "Elegir el comando correcto evita perder trabajo."

@@ -1,0 +1,10 @@
+content: "Slide 4: 'git add' y 'git commit' con ejemplos. Usa este Mermaid: mermaid\n\
+  graph TD\n  subgraph Ejemplos\n    A[\"$ git add archivo.txt\"]\n    B[\"$ git add\
+  \ .\"]\n    C[\"$ git commit -m 'Mensaje'\"]\n    D[\"$ git commit -am 'Mensaje'\"\
+  ]\n  end"
+script:
+  - "Luego, haz un commit con guit comit menos m y entre comillas el Mensaje descriptivo."
+  - "El mensaje debe ser claro, como Agrego archivo inicial o Corrijo bug en función X."
+  - "Recuerda que cada comit es un snap chot del proyecto."
+module_id: 2
+slide_id: 4

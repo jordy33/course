@@ -1,0 +1,15 @@
+content: "Slide 3: 'git push' y 'git pull'. Usa este Mermaid: mermaid\ngraph TD\n\
+  \  A[git push] --> B[Sube cambios]\n  C[git pull] --> D[Baja cambios]"
+module_id: 6
+slide_id: 3
+script:
+  - "En esta diapositiva, vamos a explicar los comandos guit push y guit pul."
+  - "Estos comandos son fundamentales para sincronizar tu repositorio local con el remoto."
+  - "Guit push sube tus commits locales al repositorio remoto."
+  - "Es la forma de compartir tus cambios con el equipo o publicar tu trabajo."
+  - "Por otro lado, guit pul baja los cambios del remoto a tu local."
+  - "Incorpora los commits de otros colaboradores y actualiza tu rama."
+  - "Mirando el diagrama, vemos que push sube cambios, y pul baja cambios."
+  - "Usar push y pul regularmente mantiene tu código sincronizado."
+  - "Recuerda que antes de push, debes hacer commit de tus cambios."
+  - "Y pul puede traer conflictos si hay cambios incompatibles."

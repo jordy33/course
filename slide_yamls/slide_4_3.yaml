@@ -1,0 +1,15 @@
+content: "Slide 3: Ejemplo práctico. Usa este Mermaid: mermaid\nflowchart TD\n  A[\"$ git branch feature\"] --> B[\"$ git switch feature\"]\n  B --> C[\"$ echo 'code' > file.txt\"]\n  C --> D[\"$ git add file.txt\"]\n  D --> E[\"$ git commit -m 'Add feature'\"]\n  E --> F[\"$ git switch main\"]\n  F --> G[\"$ git merge feature\"]"
+module_id: 4
+slide_id: 3
+script:
+  - "Aqui vamos a ver un ejemplo práctico de cómo trabajar con ramas en guit."
+  - "Imagina que quieres desarrollar una nueva característica sin afectar la rama principal."
+  - "Primero, creas una nueva rama llamada ficha con el comando guit branch ficha."
+  - "Luego, cambias a esa rama usando guit switch ficha para empezar a trabajar en ella."
+  - "Una vez en la rama ficha, haces cambios en tu código, por ejemplo, creando un archivo con echo código mayor que feil punto txt."
+  - "Después, agregas el archivo al área de preparación con guit add feil punto txt."
+  - "Ahora, confirmas los cambios con guit commit menos m Añadir ficha, usando un mensaje descriptivo."
+  - "Cuando termines, vuelves a la rama mein con guit switch mein."
+  - "Finalmente, integras los cambios de la rama ficha a mein usando guit merch ficha."
+  - "Este flujo asegura que el desarrollo sea seguro y organizado."
+  - "Siguiendo estos pasos, puedes trabajar en características nuevas de manera eficiente."

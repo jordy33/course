@@ -1,0 +1,14 @@
+content: "Slide 4: Abrir PR. Usa este Mermaid: mermaid\nflowchart TD\n  A[\"Después de push\"] --> B[\"Ve a tu fork en GitHub\"]\n  B --> C[\"Haz click en 'Pull request'\"]\n  C --> D[\"O 'Compare & pull request'\"]\n  D --> E[\"Selecciona branches\"]\n  E --> F[\"Escribe título y descripción\"]\n  F --> G[\"Crea el Pull Request\"]"
+module_id: 7
+slide_id: 4
+script:
+  - "En esta diapositiva, vamos a explicar cómo abrir una pul ricuest."
+  - "Después de hacer push de tu rama, ve a tu fork en Guit job."
+  - "Haz click en el botón de pul ricuest o compara y pul ricuest."
+  - "Selecciona la rama base y la rama de comparación."
+  - "Escribe un título claro y una descripción detallada de tus cambios."
+  - "Incluye qué problema resuelve o qué mejora añade."
+  - "Luego, crea la pul ricuest."
+  - "Mirando el diagrama, vemos los pasos: después de push, ve a fork, click en pul ricuest, selecciona ramas, escribe detalles, crea."
+  - "Abrir una pul ricuest permite que tu código sea revisado por el equipo."
+  - "Es un paso crucial en el flujo de contribución a proyectos."

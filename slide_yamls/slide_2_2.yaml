@@ -1,0 +1,10 @@
+content: "Slide 2: Ejemplo de 'git init'.\nComando: $ git init\n\nLa terminal responde con el mensaje de confirmación. Usa este Mermaid: mermaid\ngraph TD\n  A[\"$ git init\"] --> B[\"Repositorio Git vacío inicializado en /ruta/.git/\"]"
+script:
+  - "Veamos un ejemplo práctico de cómo usar 'guit init'."
+  - "En la pantalla, vemos el comando 'guit init' ejecutado en la terminal."
+  - "Luego de esto la pantalla va a mostrar un mensaje que dice: Repositorio Guit vacío inicializado en diagonal ruta , diagonal punto guit."
+  - "Esto significa que Guit ha creado la carpeta oculta punto guit en el directorio actual."
+  - "Esta carpeta es donde Guit almacena todo el historial y metadatos del proyecto."
+  - "Ahora tu proyecto está listo para empezar a trackear cambios."
+module_id: 2
+slide_id: 2

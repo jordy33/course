@@ -1,0 +1,14 @@
+content: 'Slide 1: .gitignore. Imagen de ejemplo: https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png'
+module_id: 9
+slide_id: 1
+script:
+  - "En esta diapositiva, vamos a explicar qué es el archivo punto guit ignor."
+  - "El punto guit ignor es un archivo que le dice a guit qué archivos o carpetas ignorar."
+  - "Se usa para excluir archivos temporales, logs, o datos sensibles o ambientes de desarrollo."
+  - "Por ejemplo, puedes ignorar archivos con extensión log o carpetas como birtual env."
+  - "El archivo se crea en la raíz del repositorio."
+  - "Guit no trackeará los archivos listados en punto guit ignor."
+  - "Es importante para mantener el repositorio limpio."
+  - "Puedes tener patrones globales o específicos por proyecto."
+  - "Mirando la imagen, vemos el logo de guit, recordándonos la herramienta."
+  - "Usar punto guit ignor es una buena práctica en cualquier proyecto."

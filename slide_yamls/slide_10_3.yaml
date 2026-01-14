@@ -1,0 +1,15 @@
+content: 'Slide 3: Llamado a acción y despedida. Imagen de ejemplo: https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png'
+module_id: 10
+slide_id: 3
+script:
+  - "En esta última diapositiva, te hago un llamado de acción."
+  - "Ahora que conoces los fundamentos de guit, es hora de practicar."
+  - "Crea un repositorio local y experimenta con los comandos aprendidos."
+  - "Intenta crear ramas, hacer commits y merchs."
+  - "Trabaja en proyectos colaborativos usando Guit job."
+  - "No tengas miedo de cometer errores; es parte del aprendizaje."
+  - "Recuerda los tips y evita los errores comunes."
+  - "Sigue explorando recursos avanzados para mejorar tus habilidades."
+  - "Mirando la imagen, vemos el logo de guit, símbolo de control de versiones."
+  - "Gracias por seguir este curso!!!"
+  - "¡Hasta la próxima y éxito con guit!"

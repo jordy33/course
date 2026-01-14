@@ -1,0 +1,14 @@
+content: 'Slide 2: Crear y push tags. Imagen de ejemplo: https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png'
+module_id: 8
+slide_id: 2
+script:
+  - "Aqui, vamos a ver cómo crear y hacer push de tags en guit."
+  - "Para crear un tag anotado, usa guit tag menos version 1 punto 0 menos m Mensaje."
+  - "Esto crea un tag con un mensaje descriptivo."
+  - "Para tags ligeros, simplemente usa guit tag version 1 punto 0."
+  - "Una vez creado, haz guit push oriyin version 1 punto 0 para subir el tag al remoto."
+  - "O guit push oriyin menos menos tags para subir todos los tags."
+  - "Los tags locales no se suben automáticamente con push normal."
+  - "Es importante subir tags para compartir versiones con el equipo."
+  - "Mirando la imagen, vemos el logo de guit, recordándonos la herramienta."
+  - "Crear y dar push a los tags es clave para versionar rilises."

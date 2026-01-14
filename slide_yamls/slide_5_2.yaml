@@ -1,0 +1,14 @@
+content: "Slide 2: 'git merge' exitoso. Usa este Mermaid: mermaid\ngitGraph\n  commit id: \"Initial commit\"\n  branch feature\n  checkout feature\n  commit id: \"Add feature\"\n  checkout main\n  commit id: \"Update main\"\n  merge feature id: \"Merge feature\""
+module_id: 5
+slide_id: 2
+script:
+  - "En esta diapositiva, vamos a ver un ejemplo de un merch exitoso en guit."
+  - "Un merch exitoso ocurre cuando no hay conflictos entre las ramas."
+  - "Mirando el diagrama, comienza con un commit inicial en la rama mein."
+  - "Luego se crea la rama ficha y se añade una nueva característica con un commit."
+  - "Mientras tanto, en mein se hace una actualización con otro commit."
+  - "Al hacer merch ficha, guit combina los cambios sin problemas."
+  - "El resultado es un nuevo commit de merch que une ambas ramas."
+  - "En este caso, el historial queda lineal y limpio."
+  - "Los merch exitosos son ideales porque no requieren intervención manual."
+  - "Ayudan a mantener el flujo de trabajo eficiente y organizado."

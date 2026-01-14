@@ -1,0 +1,14 @@
+content: "Slide 2: Fork y clone. Usa este Mermaid: mermaid\nflowchart TD\n  A[\"1. Fork en GitHub\"] --> B[\"2. Clone: git clone <url>\"]\n  B --> C[\"3. Crea rama: git checkout -b feature\"]\n  C --> D[\"4. Cambios: git add . && git commit\"]\n  D --> E[\"5. Push: git push origin feature\"]\n  E --> F[\"6. PR en GitHub: Compare & pull request\"]"
+module_id: 7
+slide_id: 2
+script:
+  - "En esta diapositiva, vamos a explicar el proceso de fork y clon para contribuir a proyectos."
+  - "Primero, haces fork en Guit job para crear una copia del repositorio en tu cuenta."
+  - "Luego, clonas el repositorio forkeado a tu máquina con guit clon seguido de la URL."
+  - "Después, creas una nueva rama con guit checkout menos b ficha para trabajar en tus cambios."
+  - "Haces tus modificaciones, las agregas con guit add punto y confirmas con guit commit."
+  - "Subes la rama al remoto con guit push origin ficha."
+  - "Finalmente, creas una pul ricuest en Guit job comparando y solicitando la integración."
+  - "Mirando el diagrama, vemos los pasos: fork, clon, crear rama, cambios, push, pul ricuest."
+  - "Este flujo es común para contribuir a proyectos open source."
+  - "Permite que tus cambios sean revisados antes de integrarse al proyecto principal."

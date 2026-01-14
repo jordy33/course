@@ -1,0 +1,13 @@
+# Archivos generados por el proyecto de cursos
+# Ignorar archivos de audio, imágenes y videos generados
+*.wav
+*.png
+*.mp4
+
+# Ignorar la carpeta .venv (entorno virtual de Python)
+.venv/
+
+# También ignorar directorios generados si no quieres subirlos
+# slide_sounds/
+# slides/
+# videos/

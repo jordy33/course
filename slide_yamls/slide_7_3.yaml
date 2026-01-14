@@ -1,0 +1,15 @@
+content: "Slide 3: Crear rama y push. Usa este Mermaid: mermaid\ngraph TD\n  A[Crea\
+  \ rama] --> B[Trabaja]\n  B --> C[git push]"
+module_id: 7
+slide_id: 3
+script:
+  - "En esta diapositiva, vamos a ver cómo crear una rama y hacer push en guit."
+  - "Primero, creas una nueva rama para trabajar en una característica específica."
+  - "Puedes usar guit branch nueva rama o guit checkout menos b nueva rama para crearla y cambiarte."
+  - "Una vez en la rama, haces tus cambios y commits."
+  - "Trabajas en el código, agregas archivos y confirmas los cambios."
+  - "Cuando estés listo, haces guit push para subir la rama al remoto."
+  - "Esto comparte tu rama con el equipo o prepara para una pul ricuest."
+  - "Mirando el diagrama, vemos el flujo: crea rama, trabaja, push."
+  - "Crear ramas locales y hacer push es fundamental para el desarrollo colaborativo."
+  - "Ayuda a mantener el código organizado y facilita la integración de cambios."

@@ -1,0 +1,12 @@
+content: "Slide 1: 'git status' explicado. Usa este Mermaid: mermaid\nflowchart TD\n  A[\"$ git status\"] --> B[\"En rama main nada para confirmar, árbol de trabajo limpio\"]\n  C[\"$ git status\"] --> D[\"En rama main Cambios para confirmar: nuevo archivo: README.md Archivos no rastreados: file.txt\"]"
+module_id: 3
+slide_id: 1
+script:
+  - "En esta diapositiva, vamos a explicar el comando git status de Git."
+  - "El comando git status es fundamental para saber el estado actual de nuestro repositorio."
+  - "Mirando el diagrama de flujo, vemos dos escenarios diferentes."
+  - "En el primer caso, cuando ejecutamos git status, el resultado muestra que estamos en la rama principal, llamada main, y que no hay cambios pendientes, ya que el árbol de trabajo está limpio."
+  - "Esto significa que todos los archivos están confirmados y no hay modificaciones sin guardar."
+  - "En el segundo escenario, git status nos informa de que hay cambios listos para ser confirmados, como un nuevo archivo llamado README.md, y también hay archivos no rastreados, por ejemplo, file.txt."
+  - "Estos archivos no rastreados son aquellos que Git aún no está siguiendo."
+  - "Es importante revisar el estado antes de hacer commits para asegurarse de que todo esté en orden."

@@ -1,0 +1,16 @@
+content: "Slide 5: Review y merge. Usa este Mermaid: mermaid\nmindmap\n  root((Consejos\
+  \ para PR))\n    Pequeños\n    Agrega tests\n    Sigue estilo\n    Resuelve conflicts\
+  \ local"
+module_id: 7
+slide_id: 5
+script:
+  - "En esta diapositiva, vamos a ver consejos para el ribiu y merch de pul ricuests."
+  - "Mantén las pul ricuests pequeñas (no mas de 300 líneas) para facilitar la revisión."
+  - "Agrega tests para asegurar que tus cambios no rompan nada."
+  - "Sigue el estilo de código del proyecto para mantener consistencia."
+  - "Resuelve conflictos localmente antes de enviar la pul ricuest."
+  - "Durante el ribiu, el equipo revisará el código y dará fidback."
+  - "Si hay cambios solicitados, actualiza la pul ricuest."
+  - "Una vez aprobado, se hace merch de la rama."
+  - "Mirando el mapa mental, vemos los consejos: bloques de codigo pequeños, agrega tests, sigue estilo, resuelve conflictos local."
+  - "Un buen ribiu y merch asegura calidad en el código."  

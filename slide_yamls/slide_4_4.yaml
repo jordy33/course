@@ -1,0 +1,15 @@
+content: "Slide 4: Ver ramas con 'git branch'. Usa este Mermaid: mermaid\ngraph LR\n\
+  \  A[git branch -a] --> B[Lista ramas]"
+module_id: 4
+slide_id: 4
+script:
+  - "En esta diapositiva, vamos a aprender cómo ver las ramas en nuestro repositorio con guit branch."
+  - "El comando guit branch sin argumentos muestra todas las ramas locales disponibles."
+  - "La rama en la que estás trabajando actualmente aparece marcada con un asterisco."
+  - "Esto te ayuda a saber en qué rama te encuentras en todo momento."
+  - "Si quieres ver también las ramas remotas, usa guit branch menos a."
+  - "Este comando lista todas las ramas, tanto locales como remotas."
+  - "Las ramas remotas suelen tener un prefijo como oriying barra."
+  - "Mirando el diagrama, vemos que guit branch menos a produce una lista completa de ramas."
+  - "Usar este comando es esencial para navegar y gestionar tus ramas de manera efectiva."
+  - "Recuerda verificar regularmente en qué rama estás para evitar confusiones."

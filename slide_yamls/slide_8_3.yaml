@@ -1,0 +1,15 @@
+content: "Slide 3: Releases en GitHub. Usa este Mermaid: mermaid\ngraph TD\n  A[Tag]\
+  \ --> B[Release]\n  B --> C[Adjuntar binarios]"
+module_id: 8
+slide_id: 3
+script:
+  - "En esta diapositiva, vamos a explicar los rilíses en Guit job."
+  - "Los rilíses son versiones publicadas basadas en tags."
+  - "Después de crear un tag, ve a Guit job y crea un rilís."
+  - "Selecciona el tag y añade un título y descripción."
+  - "Puedes adjuntar binarios, como archivos ejecutables o paquetes."
+  - "Los rilíses facilitan la distribución de software."
+  - "Los usuarios pueden descargar versiones específicas."
+  - "Mirando el diagrama, vemos el flujo: tag, rilís, adjuntar binarios."
+  - "Crear rilís es importante para proyectos open source."
+  - "Ayuda a mantener un historial de versiones accesible."

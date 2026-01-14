@@ -1,0 +1,6 @@
+content: "Slide 3: Instalación de Git.\n\nEn Ubuntu/Debian (Linux):\n- Abre la terminal.\n- Ejecuta: sudo apt update && sudo apt install git\n\nEn macOS:\n- Instala Homebrew si no lo tienes.\n- Luego: brew install git\n\nUsa este Mermaid: mermaid\ngraph TD\n  A[Ubuntu/Debian] --> B[sudo apt install git]\n  C[macOS] --> D[brew install git]\n  B --> E[Git instalado]\n  D --> E"
+script:
+  - "Para instalar Guit en Ubuntu o Debian, abre la terminal y ejecuta sudo apt op deit seguido de sudo apt instal guit."
+  - "En macOS, instala jomebrú si no lo tienes, luego ejecuta bru install guit."
+module_id: 1
+slide_id: 3

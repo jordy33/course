@@ -1,0 +1,11 @@
+content: "Slide 2: ¿Qué es Git? Historia y ventajas. Usa este Mermaid: mermaid\ngraph\
+  \ TD\n  A[Git: Sistema de Control de Versiones] --> B[Distribuido]\n  B --> C[Veloz]\n\
+  \  C --> D[Branching Fácil]\n  D --> E[Colaboración]"
+script:
+  - "guit es un sistema de control de versiones distribuido."
+  - "Fue creado por Linus Torvalds en 2005 para el desarrollo del kernel de Linux."
+  - "A diferencia de otros sistemas como SVN, Guit permite trabajar de forma descentralizada."
+  - "Cada desarrollador tiene una copia completa del repositorio en su máquina local."
+  - "Las ventajas incluyen velocidad, branching fácil y colaboración sin un servidor central obligatorio."
+module_id: 1
+slide_id: 2

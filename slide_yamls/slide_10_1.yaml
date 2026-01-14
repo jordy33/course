@@ -1,0 +1,17 @@
+content: "Slide 1: Resumen de temas cubiertos. Usa este Mermaid: mermaid\nmindmap\n\
+  \  root((Resumen))\n    Introducción\n    Comandos básicos\n    Historial\n    Ramas\n\
+  \    Merges\n    Remotos\n    PRs\n    Tags\n    Tips"
+module_id: 10
+slide_id: 1
+script:
+  - "Vamos a hacer un resumen de los temas cubiertos en el curso."
+  - "Comenzamos con la introducción a guit y sus conceptos básicos."
+  - "Aprendimos comandos básicos como init, add, commit y status."
+  - "Exploramos el historial con log y sus variantes."
+  - "Vimos cómo trabajar con ramas para desarrollo paralelo."
+  - "Aprendimos sobre merchs, incluyendo conflictos y resolución."
+  - "Cubrimos trabajo con repositorios remotos, push y pul."
+  - "Hablamos de pul ricuests para colaboración en Guit job."
+  - "Vimos tags para versionado y rílises en Guit job."
+  - "Mirando el mapa mental, vemos todos los temas: introducción, comandos, historial, ramas, merchs"
+  - "y tambien remotos, pul ricuests, tags y tips."

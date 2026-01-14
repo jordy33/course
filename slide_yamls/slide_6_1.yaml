@@ -1,0 +1,17 @@
+content: "Slide 1: Local vs. Remoto. Usa este Mermaid: mermaid\ngraph LR\n  Local\
+  \ -->|push| Remoto\n  Remoto -->|pull| Local"
+module_id: 6
+slide_id: 1
+script:
+  - "Aqui, vamos a distinguir entre repositorios locales y remotos en guit."
+  - "Un repositorio local es el que tienes en tu máquina, donde trabajas día a día."
+  - "Un repositorio remoto es una copia alojada en un servidor, como Guit job o Guit Lab."
+  - "Para enviar cambios del local al remoto, usas push."
+  - "Push actualiza el remoto con tus commits locales."
+  - "Para traer cambios del remoto al local, usas pul."
+  - "Pul descarga y fusiona los cambios remotos en tu repositorio local."
+  - "Mirando el diagrama, vemos el flujo: "
+  - "local push a remoto."
+  - "local remoto pul a local."
+  - "Trabajar con remotos permite colaboración y respaldo de tu código."
+  - "Es importante sincronizar regularmente para evitar divergencias."

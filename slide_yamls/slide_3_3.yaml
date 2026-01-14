@@ -1,0 +1,13 @@
+content: 'Slide 3: ''git diff'' con diferencias destacadas. Imagen de ejemplo: https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png'
+script:
+  - "Aqui vamos a explicar el comando guit diff de guit para ver diferencias."
+  - "El comando guit diff es muy útil para comparar cambios en nuestros archivos antes de confirmarlos."
+  - "Nos muestra exactamente qué líneas han sido añadidas, eliminadas o modificadas."
+  - "Si ejecutamos simplemente guit diff, compara el directorio de trabajo con el área de preparación."
+  - "Esto nos permite ver qué cambios están listos para ser confirmados y cuáles no."
+  - "Otra variante es guit diff jed, que compara el directorio de trabajo con el último commit."
+  - "De esta manera, podemos ver todos los cambios pendientes desde la última confirmación."
+  - "Las diferencias se destacan con colores y símbolos, facilitando la revisión."
+  - "Es una herramienta esencial para asegurar que nuestros commits sean precisos y completos."
+module_id: 3
+slide_id: 3

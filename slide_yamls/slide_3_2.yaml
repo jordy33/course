@@ -1,0 +1,14 @@
+content: "Slide 2: 'git log' y variantes. Usa este Mermaid: mermaid\ngraph LR\n  A[git\
+  \ log] --> B[Historial completo]\n  A --> C[git log --oneline]"
+script:
+  - "En esta diapositiva, vamos a explicar el comando guit log de guit y sus variantes."
+  - "El comando guit log es esencial para revisar el historial de commits en nuestro repositorio."
+  - "Nos permite ver todos los cambios realizados a lo largo del tiempo, incluyendo hashes, autores, fechas y mensajes de commit."
+  - "Mirando el diagrama, vemos que guit log produce un historial completo con toda la información detallada."
+  - "Si queremos una vista más compacta, podemos usar guit log menos menos en línea."
+  - "Esta variante muestra cada commit en una sola línea, facilitando la navegación rápida por el historial."
+  - "Es útil cuando tenemos muchos commits y necesitamos una visión general sin detalles excesivos."
+  - "Ambas opciones nos ayudan a entender la evolución de nuestro proyecto y a identificar cambios específicos."
+  - "Recuerda que revisar el log regularmente es una buena práctica para mantener el control de nuestro código."
+module_id: 3
+slide_id: 2

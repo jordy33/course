@@ -1,0 +1,16 @@
+content: "Slide 4: Tips para merges limpios. Usa este Mermaid: mermaid\nmindmap\n\
+  \  root((Consejos para Merges))\n    Commits pequeños\n    Merge frecuente\n   \
+  \ Usa --abort si necesario"
+module_id: 5
+slide_id: 4
+script:
+  - "En esta diapositiva, vamos a ver algunos tips para hacer merch limpios en guit."
+  - "Los merch limpios evitan conflictos y mantienen el historial ordenado."
+  - "Uno de los consejos es hacer commits pequeños y frecuentes."
+  - "Commits pequeños facilitan la revisión y reducen la posibilidad de conflictos."
+  - "Otro tip es hacer merch de manera frecuente."
+  - "Merchs frecuentes integran cambios pequeños, evitando acumulaciones problemáticas."
+  - "Si algo sale mal durante un merch, puedes usar menos menos abortar para cancelarlo."
+  - "Este comando revierte el merch y deja el repositorio en su estado anterior."
+  - "Mirando el mapa mental, vemos los consejos principales: commits pequeños, merch frecuente, y usar abortar si es necesario."
+  - "Siguiendo estos tips, tus merch serán más eficientes y menos propensos a errores."

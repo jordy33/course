@@ -1,0 +1,16 @@
+content: "Slide 4: Flujos avanzados. Usa este Mermaid: mermaid\nflowchart TD\n  main[Rama\
+  \ Principal] --> develop[Rama Develop]\n  develop --> feature[Rama Feature]\n  feature\
+  \ --> commit[Commits]\n  commit --> merge[Merge a Develop]\n  merge --> release[Release]"
+module_id: 9
+slide_id: 4
+script:
+  - "En esta diapositiva, vamos a explorar flujos avanzados en guit."
+  - "Un flujo común es Guit Flou, con ramas principales y de desarrollo."
+  - "La rama mein es la principal, con código estable."
+  - "La rama develop es para integración de características."
+  - "Desde develop, se crean ramas ficha para nuevas funcionalidades."
+  - "En ficha, se hacen commits y luego se hace merch a develop."
+  - "Cuando hay suficiente, se crea una rama rílis para preparación."
+  - "Finalmente, da merch a mein para el rílis."
+  - "Mirando el diagrama, vemos mein, develop, ficha, commits, merch, rílis."
+  - "Estos flujos avanzados organizan el desarrollo en equipos grandes."

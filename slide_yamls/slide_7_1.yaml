@@ -1,0 +1,16 @@
+content: "Slide 1: Flujo de PR. Usa este Mermaid: mermaid\ngitGraph\n  commit\n  branch\
+  \ fork\n  checkout fork\n  commit \"Cambios\"\n  checkout main\n  merge fork id:\
+  \ \"Merge de PR\""
+module_id: 7
+slide_id: 1
+script:
+  - "En esta diapositiva, vamos a explicar el flujo de una pul ricuest en guit."
+  - "Una pul ricuest es una solicitud para integrar cambios de una rama a otra."
+  - "Comienza con un commit en la rama mein."
+  - "Luego se crea una rama forc, que es una copia de la rama principal."
+  - "Cambias a la rama forc y haces commits con tus cambios."
+  - "Después, creas la pul ricuest para proponer la integración."
+  - "Si se aprueba, se hace merch de la rama forc a mein."
+  - "Mirando el diagrama, vemos el proceso: commit, branch forc, commits en forc, merch a mein."
+  - "Las pul ricuests facilitan la revisión de código y el trabajo colaborativo."
+  - "Son esenciales en plataformas como Guit job para gestionar contribuciones."

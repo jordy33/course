@@ -1,0 +1,15 @@
+content: "Slide 1: ¿Qué son tags? Usa este Mermaid: mermaid\ngitGraph\n  commit tag:\
+  \ \"v1.0\"\n  commit\n  commit tag: \"v1.1\""
+module_id: 8
+slide_id: 1
+script:
+  - "En esta diapositiva, vamos a explicar qué son los tags en guit."
+  - "Los tags son referencias a commits específicos, como marcadores en el historial."
+  - "Se usan para marcar versiones importantes, como versión 1 punto 0 o versión 1 punto 1."
+  - "A diferencia de las ramas, los tags no cambian; apuntan a un commit fijo."
+  - "Puedes crear tags anotados con mensajes o ligeros sin mensaje."
+  - "Los tags ayudan a identificar rilises o puntos importantes en el desarrollo."
+  - "Mirando el diagrama, vemos commits con tags versión 1 punto 0 y versión 1 punto 1."
+  - "Esto indica versiones estables del proyecto."
+  - "Usar tags facilita navegar a versiones específicas."
+  - "Son esenciales para el versionado y distribución de software."

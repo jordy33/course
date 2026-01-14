@@ -1,0 +1,16 @@
+content: "Slide 2: Comandos: branch, checkout, switch. Usa este Mermaid: mermaid\n\
+  graph TD\n  A[git branch new] --> B[git switch new]\n  B --> C[Trabaja y commit]"
+module_id: 4
+slide_id: 2
+script:
+  - "En esta diapositiva, vamos a explicar los comandos principales para manejar ramas en guit."
+  - "El comando guit branch lista todas las ramas existentes en tu repositorio."
+  - "También puedes usarlo para crear una nueva rama, por ejemplo, guit branch niu."
+  - "Una vez creada la rama, necesitas cambiarte a ella para trabajar en ella."
+  - "Para eso, usa guit switch niu, que es el comando moderno para cambiar de rama."
+  - "Guit switch es más específico que el antiguo guit checkout para este propósito."
+  - "Guit checkout también puede cambiar de rama, pero ahora se recomienda usar switch para claridad."
+  - "Mirando el diagrama, el flujo es: primero creas la rama con guit branch niu."
+  - "Luego cambias a ella con guit switch niu."
+  - "Después, puedes trabajar y hacer commits en esa rama."
+  - "Estos comandos son esenciales para gestionar ramas de manera eficiente."

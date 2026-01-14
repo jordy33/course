@@ -1,0 +1,15 @@
+content: "Slide 1: ¿Por qué ramas? Usa este Mermaid: mermaid\ngitGraph\n  commit\n\
+  \  branch feature\n  checkout feature\n  commit\n  commit\n  checkout main\n  commit"
+module_id: 4
+slide_id: 1
+script:
+  - "En este apartado, vamos a explicar por qué las ramas son importantes en guit."
+  - "Las ramas en guit permiten trabajar en diferentes versiones del código al mismo tiempo sin interferencias."
+  - "Puedes crear una rama para desarrollar una nueva característica sin afectar la rama principal."
+  - "Esto es ideal para probar ideas nuevas o corregir errores sin arriesgar el código estable."
+  - "Mirando el diagrama, vemos que comienza con un commit en la rama mein."
+  - "Luego se crea una rama llamada ficha, se cambia a ella con checkout, y se hacen dos commits."
+  - "Después, se vuelve a la rama mein con checkout, y se hace otro commit."
+  - "Las ramas facilitan el desarrollo colaborativo, permitiendo que varios desarrolladores trabajen en paralelo."
+  - "También ayudan en la gestión de versiones, como mantener ramas para producción y desarrollo."
+  - "Usar ramas es una práctica esencial para mantener un flujo de trabajo organizado y seguro."

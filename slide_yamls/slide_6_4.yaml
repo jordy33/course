@@ -1,0 +1,15 @@
+content: "Slide 4: Configuración inicial. Usa este Mermaid: mermaid\nflowchart TD\n\
+  \  A[git config user.name] --> B[git config user.email]"
+module_id: 6
+slide_id: 4
+script:
+  - "En esta diapositiva, vamos a ver la configuración inicial de guit."
+  - "Antes de empezar a usar guit, es importante configurar tu identidad."
+  - "Esto se hace con guit config yuser neim seguido de tu nombre."
+  - "También debes configurar guit config yuser punto imeil seguido de tu correo electrónico."
+  - "Estos datos aparecerán en tus commits para identificar al autor."
+  - "Puedes configurarlos globalmente para todos los repositorios."
+  - "O localmente para un repositorio específico."
+  - "Mirando el diagrama, vemos que primero configuras el nombre, luego el imeil."
+  - "Una configuración correcta es esencial para el trabajo colaborativo."
+  - "Recuerda verificar tu configuración con guit config menos menos list."

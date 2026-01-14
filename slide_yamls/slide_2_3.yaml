@@ -1,0 +1,11 @@
+content: "Slide 3: Staging area explicada. Usa este Mermaid: mermaid\ngraph TD\n  A[\"Directorio de Trabajo (archivos modificados)\"] -->|git add archivo.txt| B[\"Área de Staging (índice)\"]\n  A -->|git add .| B\n  B -->|git commit -m 'mensaje'| C[\"Repositorio (historial)\"]"
+script:
+  - "Ahora hablemos del área de staguing, también conocida como índice."
+  - "La área de staguing es como una zona de preparación donde decides qué cambios incluir en el próximo commit."
+  - "No todos los cambios en tu directorio de trabajo van automáticamente al repositorio."
+  - "Usas guit add para mover archivos específicos a la área de staguing."
+  - "Por ejemplo, guit add nombre del archivo añade un archivo en particular."
+  - "O guit add punto añade todos los archivos modificados en el directorio actual."
+  - "Esto te da control total sobre qué versionar y cuándo."
+module_id: 2
+slide_id: 3

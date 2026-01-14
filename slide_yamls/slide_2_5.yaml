@@ -1,0 +1,11 @@
+content: "Slide 5: Práctica sugerida. Usa este Mermaid: mermaid\nflowchart TD\n  classDef example fill:#ffff00\n  subgraph Práctica\n    A[\"$ mkdir prueba\"]\n    B[\"$ touch README.md\"]\n    C[\"$ git add README.md\"]\n    D[\"$ git commit -m 'Initial commit'\"]\n  end\n  class Práctica example\n  A --> B --> C --> D"
+module_id: 2
+slide_id: 5
+
+script:
+  - "Aquí tienes un ejemplo práctico de los comandos básicos de Guit."
+  - "Primero, crea una carpeta con 'm k dir prueba'."
+  - "Luego, agrega un archivo con 'touch Ridmi punto m d'."
+  - "Agrega el archivo al staguing con 'guit add Ridmi punto m d'."
+  - "Finalmente, haz un comit con guit comit menos m  y pones entre comillas primer comit."
+  - "Practica esto en tu terminal para familiarizarte."

@@ -1,0 +1,15 @@
+content: "Slide 3: Errores comunes. Usa este Mermaid: mermaid\nmindmap\n  root((Errores))\n\
+  \    Olvidar pull\n    Commits grandes"
+module_id: 9
+slide_id: 3
+script:
+  - "En esta diapositiva, vamos a ver errores comunes en guit."
+  - "Uno de los errores más frecuentes es olvidar hacer pul antes de push."
+  - "Esto puede causar conflictos o sobrescribir cambios."
+  - "Otro error es hacer commits demasiado grandes."
+  - "Commits grandes dificultan la revisión y el debugging."
+  - "También es común commitear archivos sensibles sin punto guit ignor."
+  - "O usar riset en lugar de ríbert cuando hay cambios compartidos."
+  - "Para evitar errores, siempre revisa el estado con guit status."
+  - "Mirando el mapa mental, vemos olvidar pul y commits grandes."
+  - "Conocer estos errores ayuda a trabajar mejor con guit."
