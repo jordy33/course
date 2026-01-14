@@ -101,10 +101,11 @@ Los scripts se ejecutan desde la raíz del proyecto. Asegúrate de tener el ento
 - Los archivos generados (*.png, *.wav, *.mp4) están ignorados en `.gitignore` para no subirlos al repo.
 - Si editas un YAML, regenera el slide/sonido correspondiente para aplicar cambios.
 - El video incluye fades y pausas automáticas; edita `generate_video.py` para ajustar tiempos.
+- Para cambiar el logo del header en los slides, edita la variable `logo_url` en `generate_slides.py` con la URL de la nueva imagen (ej. logo del curso).
 
 ## Generación de YAMLs con LLMs
 
-Los archivos YAML individuales se generan a partir de prompts para LLMs. Un LLM puede crear el contenido completo de un curso nuevo siguiendo estos pasos:
+Los archivos YAML individuales se generan a partir de prompts para LLMs. Un LLM puede crear el contenido completo de un curso nuevo siguiendo estos pasos. Recomendado: Usa DeepSeek para generar slides con imágenes de alta calidad.
 
 ### Instrucciones para el Generador de Cursos (System Prompt)
 
@@ -121,12 +122,14 @@ REGLAS DE NOMENCLATURA DE ARCHIVOS:
 2. Ejemplos: slide_1_1.yaml, slide_2_3.yaml, slide_8_3.yaml.
 
 REGLAS PARA EL CAMPO "CONTENT" (VISUAL):
-1. Usa Markdown profesional: bullets (•) para listas.
-2. Imágenes: "Imagen de ejemplo: URL" (usar Unsplash o logos oficiales).
+1. Usa texto plano con bullets (•) para listas; evita Markdown innecesario como negritas o cursivas.
+2. Imágenes: "Imagen de ejemplo: URL" (usar Unsplash o logos oficiales). Solo una imagen por slide. Si usas imagen, enfócate en ella; si no, combina texto y Mermaid.
 3. Diagramas Mermaid:
    - Usa `graph TD` (vertical), `graph LR` (horizontal) o `flowchart`.
    - No uses saltos de línea (\n) dentro de los nodos; usa espacios.
    - Estructura: "Usa este Mermaid: mermaid\n[código]".
+4. Longitud: Limita el content a 5-7 líneas de texto o elementos visuales para mantener la diapositiva legible y evitar sobrecarga.
+5. Título: Usa títulos simples sin prefijos como 'Módulo 1:' o 'Slide 1:' para evitar sobrecarga de información.
 
 REGLAS PARA EL CAMPO "SCRIPT" (AUDIO PARA KOKORO TTS):
 1. El script DEBE ser un array de strings (lista de oraciones cortas).
