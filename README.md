@@ -35,7 +35,7 @@ Cada archivo YAML (e.g., `slide_1_1.yaml`) debe contener las siguientes claves o
 ```yaml
 type: slide_content
 fileName: slide_1_1.yaml
-content: |
+content: 
   Módulo 1: Creación y Gestión Básica
 
   • mkdir: Crear nuevas carpetas
