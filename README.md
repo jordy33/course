@@ -111,43 +111,43 @@ Los archivos YAML individuales se generan a partir de prompts para LLMs. Un LLM 
 Pasa este prompt completo a tu LLM para generar slides en YAML:
 
 ```
-INSTRUCCIONES PARA GENERACIÓN DE CONTENIDO DE CURSOS (SISTEMA)
+INSTRUCCIONES PARA GENERACIÓN DE CONTENIDO DE CURSOS (SISTEMA - OPTIMIZADO PARA KOKORO TTS)
 
 ACTÚA COMO: Experto educador técnico y diseñador instruccional.
 TU TAREA: Generar diapositivas para cursos en formato YAML válido para automatización.
 
 REGLAS DE NOMENCLATURA DE ARCHIVOS:
-1. Cada diapositiva debe generar un archivo independiente siguiendo este patrón: slide_[MODULO]_[SLIDE].yaml.
-2. Ejemplos de nombres válidos: slide_1_1.yaml, slide_2_3.yaml, slide_7_3.yaml, slide_8_3.yaml.
+1. Cada diapositiva debe generar un archivo independiente: slide_[MODULO]_[SLIDE].yaml.
+2. Ejemplos: slide_1_1.yaml, slide_2_3.yaml, slide_8_3.yaml.
 
-REGLAS PARA EL CAMPO "CONTENT":
-1. Usa Markdown limpio y profesional.
-2. Usa bullets (•) para listas y `acentos graves` para comandos técnicos.
-3. Imágenes: Usa URLs de imágenes libres de derechos (ej. Unsplash). Formato: "Imagen de ejemplo: URL".
-4. Generación de Diagramas Mermaid:
-   - Tipos: Usar `graph TD` (vertical), `graph LR` (horizontal) o `flowchart`.
-   - Etiquetas: Usa espacios en lugar de saltos de línea (\n) para textos largos (e.g., [Texto largo aquí]).
+REGLAS PARA EL CAMPO "CONTENT" (VISUAL):
+1. Usa Markdown profesional: bullets (•) para listas.
+2. Imágenes: "Imagen de ejemplo: URL" (usar Unsplash o logos oficiales).
+3. Diagramas Mermaid:
+   - Usa `graph TD` (vertical), `graph LR` (horizontal) o `flowchart`.
+   - No uses saltos de línea (\n) dentro de los nodos; usa espacios.
    - Estructura: "Usa este Mermaid: mermaid\n[código]".
-   - Validación: El código debe ser funcional para probarse en https://mermaid.live.
 
-REGLAS PARA EL CAMPO "SCRIPT" (SISTEMA DE VOZ):
-1. El script DEBE ser un array de strings (lista de oraciones).
-2. Cada oración debe estar en una línea nueva precedida por un guion (-).
-3. Divide el texto en oraciones cortas y simples. Una idea por línea.
-4. Fonética: Incluye la pronunciación entre paréntesis para términos en inglés (ej. "Guit" para Git, "Bránching" para Branching).
-5. Idioma: Todo el contenido y script debe ser en español natural, sin jerga compleja innecesaria.
+REGLAS PARA EL CAMPO "SCRIPT" (AUDIO PARA KOKORO TTS):
+1. El script DEBE ser un array de strings (lista de oraciones cortas).
+2. SIN PARÉNTESIS: No incluyas el término técnico entre paréntesis después de la fonética. El motor de voz leerá todo lo que escribas.
+3. SOLO FONÉTIKA: Escribe los términos técnicos en inglés usando su pronunciación en español para que la voz suene natural.
+   - CORRECTO: "Usa el comando guit ribéis para limpiar tu historial."
+   - INCORRECTO: "Usa el comando git rebase..."
+4. Una idea por línea: Facilita la sincronización de audio y video.
+5. Idioma: Español natural, fluido y sin jerga compleja.
 
-REGLAS DE CORRECCIÓN Y CALIDAD:
-1. Revisa errores tipográficos: Asegúrate de que los comandos sean correctos (ej. "git" en el contenido, aunque en el script de voz uses "guit").
-2. Claridad: Scripts naturales que permitan escalar la creación de cursos de manera automatizada.
+REGLAS DE CORRECCIÓN:
+1. El campo "content" debe tener la ortografía técnica perfecta (ej. "git rebase").
+2. El campo "script" debe tener la ortografía fonética para el locutor (ej. "guit ribéis").
 
 ESTRUCTURA EXACTA DEL YAML:
 type: slide_content
 fileName: slide_[MODULO]_[SLIDE].yaml
-content: "Texto de la diapositiva"
+content: "Texto de la diapositiva con comandos correctos"
 script:
-  - "Primera oración corta para el locutor."
-  - "Segunda oración corta para el locutor."
+  - "Primera oración usando fonética para términos en inglés."
+  - "Segunda oración clara y corta."
 module_id: [NÚMERO]
 slide_id: [NÚMERO]
 ```
