@@ -31,7 +31,7 @@ Cada archivo YAML (e.g., `slide_1_1.yaml`) debe contener las siguientes claves o
 - **Validación**: YAML válido. Usa herramientas como yamlvalidator.com.
 - **Extensibilidad**: Agrega claves opcionales si necesario, pero mantén compatibilidad.
 
-### Ejemplo de YAML Completo
+### Ejemplo de YAML Completo generado con Deepseek
 ```yaml
 type: slide_content
 fileName: slide_1_1.yaml
