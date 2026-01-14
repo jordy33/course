@@ -33,10 +33,35 @@ Cada archivo YAML (e.g., `slide_1_1.yaml`) debe contener las siguientes claves o
 
 ### Ejemplo de YAML Completo
 ```yaml
-content: "Slide 1: Introducción a Git. • Git es un VCS. • Permite rastrear cambios. Imagen de ejemplo: https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png. Usa este Mermaid: mermaid\ngraph TD\nA[Usuario] --> B[Git] --> C[Repositorio]"
+type: slide_content
+fileName: slide_1_1.yaml
+content: |
+  Módulo 1: Creación y Gestión Básica
+
+  • mkdir: Crear nuevas carpetas
+  • touch: Crear archivos vacíos
+  • cat: Ver contenido de archivos
+  • clear: Limpiar la pantalla
+
+  Usa este Mermaid: mermaid
+  graph TD
+    A[Usuario en Terminal] --> B[Usa mkdir Proyectos]
+    B --> C[Carpeta creada]
+    A --> D[Usa touch nota.txt]
+    D --> E[Archivo creado]
+    E --> F[Usa cat nota.txt]
+    F --> G[Contenido visible]
 script:
-  - "¡Bienvenidos a este curso básico de Git!"
-  - "Git es un sistema de control de versiones que permite rastrear cambios en el código."
+  - "Ahora aprenderemos a crear y gestionar archivos y carpetas."
+  - "Para crear una nueva carpeta, usa el comando m k dir."
+  - "Escribe m k dir, un espacio, y el nombre de tu carpeta."
+  - "Para crear un archivo vacío, usa el comando touch."
+  - "Por ejemplo, touch mi_archivo punto t x t."
+  - "Para ver rápidamente lo que contiene un archivo, usa el comando cat."
+  - "Escribe cat, un espacio, y el nombre del archivo."
+  - "Si la pantalla se llena de texto, puedes limpiarla con el comando clear."
+  - "Esto hará que la terminal quede vacía y lista para nuevos comandos."
+  - "Recuerda que touch solo crea archivos vacíos, no es un editor de texto."
 module_id: 1
 slide_id: 1
 ```
