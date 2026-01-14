@@ -187,8 +187,3 @@ Esto permite escalar la creación de cursos de manera automatizada.
 - Especifica el tema (ej. "Genera un curso sobre Python básico con 5 módulos").
 - Incluye ejemplos de Mermaid si el tema lo requiere (ej. diagramas de flujo para algoritmos).
 - Valida el output YAML con un parser.
-
-### Herramientas Recomendadas para Procesar
-- **Validación**: Usa Python con `yaml` module (import yaml; yaml.safe_load(file)).
-- **Renderizado**: Mermaid-CLI para diagramas, Pillow para imágenes compuestas.
-- **Slideshow**: Reveal.js para presentaciones web, FFmpeg para videos.
