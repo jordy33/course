@@ -46,6 +46,35 @@ slide_id: 1
 - `generate_sound.py`: Genera WAV desde scripts usando Kokoro TTS.
 - `generate_video.py`: Combina slides y audio en MP4 con transiciones.
 
+#### Uso de los Scripts
+Los scripts se ejecutan desde la raíz del proyecto. Asegúrate de tener el entorno virtual activado (`source .venv/bin/activate`) y las dependencias instaladas.
+
+- **Generar todos los slides**: `python generate_slides.py`
+  - Crea la carpeta `slides/` con imágenes PNG para todos los slides en `slide_yamls/`.
+
+- **Generar un slide específico**: `python generate_slides.py [module_id] [slide_id]`
+  - Ejemplo: `python generate_slides.py 1 2` genera solo `slides/slide_1_2.png`.
+  - Útil para arreglar o actualizar un slide sin regenerar todos.
+
+- **Generar todos los sonidos**: `python generate_sound.py`
+  - Crea la carpeta `slide_sounds/` con archivos WAV para todos los slides.
+
+- **Generar un sonido específico**: `python generate_sound.py [module_id] [slide_id]`
+  - Ejemplo: `python generate_sound.py 3 1` genera solo `slide_sounds/sound_3_1.wav`.
+  - Ideal para corregir el audio de un slide (e.g., después de editar el script en YAML).
+
+- **Generar el video completo**: `python generate_video.py`
+  - Crea `videos/final_presentation.mp4` combinando todos los slides y audios con transiciones y pausas.
+
+- **Generar video para un slide específico**: `python generate_video.py [module_id] [slide_id]`
+  - Ejemplo: `python generate_video.py 2 3` genera un video solo para ese slide.
+  - Útil para probar o arreglar una parte del video.
+
+**Notas**:
+- Los archivos generados (*.png, *.wav, *.mp4) están ignorados en `.gitignore` para no subirlos al repo.
+- Si editas un YAML, regenera el slide/sonido correspondiente para aplicar cambios.
+- El video incluye fades y pausas automáticas; edita `generate_video.py` para ajustar tiempos.
+
 ## Generación de YAMLs con LLMs
 
 Los archivos YAML individuales se generan a partir de prompts para LLMs. Un LLM puede crear el contenido completo de un curso nuevo siguiendo estos pasos:
