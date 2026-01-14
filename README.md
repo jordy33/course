@@ -105,7 +105,7 @@ Los scripts se ejecutan desde la raíz del proyecto. Asegúrate de tener el ento
 
 ## Generación de YAMLs con LLMs
 
-Los archivos YAML individuales se generan a partir de prompts para LLMs. Un LLM puede crear el contenido completo de un curso nuevo siguiendo estos pasos. Recomendado: Usa DeepSeek para generar slides con imágenes de alta calidad.
+Los archivos YAML individuales se generan a partir de prompts para LLMs. Un LLM puede crear el contenido completo de un curso nuevo siguiendo estos pasos. Recomendado: Usa **DeepSeek** para generar slides con imágenes de alta calidad.
 
 ### Instrucciones para el Generador de Cursos (System Prompt)
 
