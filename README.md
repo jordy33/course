@@ -15,7 +15,7 @@ Cada archivo YAML (e.g., `slide_1_1.yaml`) debe contener las siguientes claves o
 
 ### Detalles de `content`
 - Texto principal: Título, explicaciones, bullets (usa `•` para bullets).
-- Imágenes: "Imagen de ejemplo: [URL accesible]" (opcional).
+- Imágenes: "Imagen de ejemplo: URL" (opcional). Solo se soporta una imagen por slide (la primera encontrada).
 - Diagramas: "Usa este Mermaid: mermaid\n[código Mermaid válido]" (opcional).
 - Ejemplo: "Slide 1: Introducción a Git. • Punto 1 • Punto 2. Usa este Mermaid: mermaid\ngraph TD\nA --> B"
 
@@ -40,6 +40,33 @@ script:
 module_id: 1
 slide_id: 1
 ```
+
+### Instalación de Dependencias
+Para macOS, usa el script incluido `install_dependencies.sh` para instalar automáticamente Homebrew, FFmpeg, Node.js, Mermaid-CLI y Chrome Headless. Ejecuta `./install_dependencies.sh` después de hacer el script ejecutable con `chmod +x install_dependencies.sh`.
+Después de instalar las dependencias del sistema, configura el entorno virtual de Python y instala los paquetes requeridos.
+Sigue estos pasos:
+
+##### Configuración del Entorno Virtual
+1. **Crear el entorno virtual**:
+   - Ejecuta: `python -m venv .venv`
+   - Esto crea la carpeta `.venv` con el entorno aislado.
+
+2. **Activar el entorno virtual**:
+   - macOS/Linux: `source .venv/bin/activate`
+   - Windows: `.venv\Scripts\activate`
+   - Verás `(.venv)` en el prompt indicando que está activado.
+
+3. **Instalar dependencias de Python**:
+   - Ejecuta: `pip install -r requirements.txt`
+   - Esto instala PyYAML, Pillow y requests.
+
+##### Otras Dependencias
+
+1. **Kokoro TTS Server** (para generación de audio):
+   - Clona y ejecuta el servidor local: https://github.com/jordy33/kokoro-tts
+   - Asegúrate de que esté corriendo en `http://localhost:8880`
+
+Asegúrate de tener Node.js, npm y Python instalados. Para macOS, usa Homebrew para instalar dependencias del sistema.
 
 ### Scripts de Generación
 - `generate_slides.py`: Crea imágenes PNG desde YAML (texto + imágenes + Mermaid).
@@ -79,21 +106,51 @@ Los scripts se ejecutan desde la raíz del proyecto. Asegúrate de tener el ento
 
 Los archivos YAML individuales se generan a partir de prompts para LLMs. Un LLM puede crear el contenido completo de un curso nuevo siguiendo estos pasos:
 
-### 1. Prompt para LLM
-Usa un prompt como este para generar contenido por slide:
+### Instrucciones para el Generador de Cursos (System Prompt)
+
+Pasa este prompt completo a tu LLM para generar slides en YAML:
 
 ```
-Eres un experto educador. Genera contenido para un slide específico de un curso sobre [TEMA, ej. "Git Básico"]. El slide pertenece al módulo [NÚMERO, ej. 1], slide [NÚMERO, ej. 1].
+INSTRUCCIONES PARA GENERACIÓN DE CONTENIDO DE CURSOS (SISTEMA)
 
-Proporciona:
-- content: Descripción del slide en string, incluyendo texto, bullets (usa •), imágenes ("Imagen de ejemplo: URL"), y Mermaid si aplica ("Usa este Mermaid: mermaid\ncódigo").
-- script: Array de strings en español, natural para voz, explicando el contenido.
-- module_id: [NÚMERO]
-- slide_id: [NÚMERO]
+ACTÚA COMO: Experto educador técnico y diseñador de instruccionales.
+TU TAREA: Generar diapositivas para cursos en formato YAML válido.
 
-Ejemplo de Mermaid: graph TD\nA[Inicio] --> B[Proceso]
+ REGLAS PARA EL CAMPO "CONTENT":
+1. Usa Markdown limpio.
+2. Usa bullets (•) para listas.
+3. Para comandos de código, usa `acentos graves`.
+4. Para diagramas, usa exclusivamente la sintaxis Mermaid: mermaid\ngraph TD...
+5. Si incluyes imágenes, usa: "Imagen de ejemplo: URL". Solo una imagen por slide.
 
-Asegúrate de que sea educativo, conciso y válido YAML.
+ REGLAS PARA EL CAMPO "SCRIPT" (MUY IMPORTANTE):
+1. El script DEBE ser un array de strings (lista de oraciones).
+2. Cada oración debe estar en una línea nueva precedida por un guion (-).
+3. Divide el texto en oraciones cortas y simples. Una idea por línea.
+4. Escribe en español natural para locución.
+5. Incluye la pronunciación fonética entre paréntesis para términos técnicos en inglés la primera vez que aparezcan (ej. "Guit" para Git, "Bránching" para Branching, "Sét-áp" para Setup).
+
+ REGLAS DE ESTRUCTURA (YAML):
+Debes entregar el resultado con esta estructura exacta:
+
+type: slide_content
+fileName: slide_[MODULO]_[SLIDE].yaml
+content: "Texto de la diapositiva"
+script:
+  - "Primera oración corta."
+  - "Segunda oración corta."
+  - "Tercera oración corta."
+module_id: [NÚMERO]
+slide_id: [NÚMERO]
+
+EJEMPLO DE REFERENCIA:
+content: "Slide 1: Introducción\n• Concepto de Git.\n• Uso de la terminal."
+script:
+  - "Bienvenidos al curso de Guit (Git)."
+  - "En esta lección aprenderemos los conceptos básicos."
+  - "Usaremos la terminal de comandos para todo el proceso."
+module_id: 1
+slide_id: 1
 ```
 
 ### 2. Generación de Diagramas Mermaid
@@ -119,31 +176,3 @@ Esto permite escalar la creación de cursos de manera automatizada.
 - **Validación**: Usa Python con `yaml` module (import yaml; yaml.safe_load(file)).
 - **Renderizado**: Mermaid-CLI para diagramas, Pillow para imágenes compuestas.
 - **Slideshow**: Reveal.js para web, FFmpeg para videos.
-
-#### Instalación de Dependencias
-Para macOS, usa el script incluido `install_dependencies.sh` para instalar automáticamente Homebrew, FFmpeg, Node.js, Mermaid-CLI y Chrome Headless. Ejecuta `./install_dependencies.sh` después de hacer el script ejecutable con `chmod +x install_dependencies.sh`.
-
-Para otros sistemas o instalación manual, sigue estos pasos:
-
-1. **Python 3.8+** y paquetes:
-   - Crea un entorno virtual: `python -m venv .venv`
-   - Activa: `source .venv/bin/activate` (macOS/Linux) o `.venv\Scripts\activate` (Windows)
-   - Instala: `pip install -r requirements.txt`
-
-2. **FFmpeg** (para procesamiento de audio y video):
-   - macOS: `brew install ffmpeg`
-   - Linux: `sudo apt install ffmpeg`
-   - Windows: Descarga de https://ffmpeg.org/download.html
-
-3. **Mermaid-CLI** (para renderizar diagramas Mermaid):
-   - `npm install -g @mermaid-js/mermaid-cli`
-   - Requiere Node.js y npm instalados.
-
-4. **Chrome Headless** (requerido por Mermaid-CLI):
-   - `npx puppeteer browsers install chrome`
-
-5. **Kokoro TTS Server** (para generación de audio):
-   - Clona y ejecuta el servidor local: https://github.com/jordy33/kokoro-tts
-   - Asegúrate de que esté corriendo en `http://localhost:8880`
-
-Asegúrate de tener Node.js, npm y Python instalados. Para macOS, usa Homebrew para instalar dependencias del sistema.
